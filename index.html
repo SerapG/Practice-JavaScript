@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <script type="text/javascript">
+      document.formAdi.isim.value = "Baran Balin";
+      document.getElementbyId("yas").value = "25";
+    </script>
+  </head>
+  <body>
+    <h1>Kodluyoruz- Fornt-End-101-</h1>
+
+    <!--<script src="./degisken-tanimlama-2.js"></script> -->
+    <!--<script src="./number-veri-turu.js"></script> -->
+    <!--<script src="./boolean-veri-turu.js"></script> -->
+    <!--<script src="./veri-turu-ve-veri-turu-donusumleri.js"></script> -->
+    <!--<script src="./template-literals-kullanimi.js"></script> -->
+    <!-- <script src="./string-veri-turu-islemleri.js"></script>-->
+    <script src="./document-object.js"></script>
+
+    <form name="formAdi" method="post" action="">
+      <input type="text" name="isim" /><input type="text" id="yas" />
+    </form>
+
+    <input type="button" id="btnClick" value="Tıkla!!" />
+    <p id="domain">Serap</p>
+    <script>
+      document.getElementById("domain").innerHTML = "DOM Manipülasyonu yaptık!";
+    </script>
+    <script>document.getElementById("btnClick").addEventListener("click", clicked);
+      function clicked(){
+             alert("Butona Tıklandı");
+             } </script>
+  </body>
+</html>
