@@ -11,7 +11,20 @@ const degerler = {
 const { deger1, deger2, deger3, deger4 = "deger4" } = degerler;
 console.log(deger1, deger2, deger3, deger4);
 */
+const degerler = {
+  deger1: "deger1",
+  deger2: "deger2",
+  deger3: {
+    isim: "serap",
+  },
+};
 
-const degerler = [1, 2, 3];
-const [deger1, deger2, deger3] = degerler;
-console.log(deger1, deger2, deger3);
+const {
+  deger3: { isim : name},
+} = degerler;
+
+console.log(name);
+// const degerler = [1, 2, 3];
+
+// const [deger1, deger2, deger3] = degerler;
+// console.log(deger1, deger2, deger3);
